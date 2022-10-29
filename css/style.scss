@@ -78,9 +78,14 @@ a {
 }
 
 .aboutPage {
-  font-family: 'Open Sans', sans-serif;
   @include flexBox;
   gap: 10px;
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 
 .footer {
