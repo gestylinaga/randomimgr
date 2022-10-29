@@ -84,6 +84,10 @@ a:hover {
   text-align: center;
 }
 
+.xmpText {
+  color: white;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -94,7 +98,7 @@ a:hover {
   margin-top: 50px;
 }
 
-/* Hover Disco Animation */
+/* Hover Header Disco Animation */
 @keyframes color-rotate {
   from {
     filter: hue-rotate(0deg);

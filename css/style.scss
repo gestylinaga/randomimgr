@@ -88,6 +88,10 @@ a {
   }
 }
 
+.xmpText {
+  color: white;
+}
+
 .footer {
   @include flexBox;
   gap: 3px;
@@ -95,7 +99,7 @@ a {
   margin-top: 50px;
 }
 
-/* Hover Disco Animation */
+/* Hover Header Disco Animation */
 @keyframes color-rotate {
   from {
     filter: hue-rotate(0deg);
