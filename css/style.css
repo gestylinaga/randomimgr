@@ -1,0 +1,86 @@
+/* Random Imagr */
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Silkscreen', cursive;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+h1 {
+  color: white;
+}
+
+h1:hover {
+  color: lightgreen;
+  animation: color-rotate 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  cursor: default;
+}
+
+.buttonBox {
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.buttonBox:hover {
+  color: lightgreen;
+  border: 1px solid lightblue;
+}
+
+.navBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+p {
+  color: white;
+  font-size: 0.75rem;
+}
+
+a {
+  border: none;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: lightgreen;
+}
+
+.galleryGrid {
+  display: grid;
+  grid: auto / auto auto;
+  gap: 7px;
+}
+
+.photoGrid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7px;
+}
+
+/* Hover Disco */
+@keyframes color-rotate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
