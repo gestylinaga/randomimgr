@@ -1,29 +1,35 @@
-/* Random Imgr */
-* {
+// Random Imgr stylesheet in sass
+
+* { 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Silkscreen", cursive;
-  background: black;
-  gap: 1em;
+@mixin flexBox {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+body {
+  font-family: 'Silkscreen', cursive;
+  background: black;
+  gap: 1em;
+  @include flexBox;
+}
+
 h1 {
   color: white;
-}
-h1:hover {
-  color: lightgreen;
-  animation: color-rotate 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  cursor: default;
+
+  &:hover {
+    color: lightgreen;
+    animation: color-rotate 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    cursor: default;
+  }
 }
 
 .buttonBox {
@@ -31,17 +37,15 @@ h1:hover {
   color: white;
   text-decoration: none;
   padding: 5px;
-}
-.buttonBox:hover {
-  color: lightgreen;
-  border: 1px solid lightblue;
+
+  &:hover {
+    color: lightgreen;
+    border: 1px solid lightblue;
+  }
 }
 
 .navBox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flexBox;
   gap: 7px;
 }
 
@@ -54,14 +58,15 @@ a {
   border: none;
   text-decoration: none;
   color: white;
-}
-a:hover {
-  color: lightgreen;
+
+  &:hover {
+    color: lightgreen;
+  }
 }
 
 .galleryGrid {
   display: grid;
-  grid: auto/auto auto;
+  grid: auto / auto auto;
   gap: 7px;
 }
 
@@ -73,19 +78,13 @@ a:hover {
 }
 
 .aboutPage {
-  font-family: "Open Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  @include flexBox;
   gap: 10px;
 }
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flexBox;
   gap: 3px;
   margin-bottom: 10px;
   margin-top: 50px;
@@ -100,5 +99,3 @@ a:hover {
     filter: hue-rotate(360deg);
   }
 }
-
-/*# sourceMappingURL=style.css.map */
