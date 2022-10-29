@@ -12,6 +12,6 @@ random image source `<html>` tag:
 
 It's like a lorem ipsum random text generator, but for images...
 
-[link to live site](https:gesty.dev/randomimgr)
+[Link to Live Site](https://gesty.dev/randomimgr)
 
 by: [Gesty Linaga](https://gesty.dev)
