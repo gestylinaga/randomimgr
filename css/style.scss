@@ -18,11 +18,19 @@ body {
   background: black;
   gap: 1em;
   @include flexBox;
+  &::-webkit-scrollbar {
+    width: .5rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: black;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: black;
+  }
 }
 
 h1 {
   color: white;
-
   &:hover {
     color: lightgreen;
     animation: color-rotate 1s;
@@ -37,7 +45,6 @@ h1 {
   color: white;
   text-decoration: none;
   padding: 5px;
-
   &:hover {
     color: lightgreen;
     border: 1px solid lightblue;
@@ -58,7 +65,6 @@ a {
   border: none;
   text-decoration: none;
   color: white;
-
   &:hover {
     color: lightgreen;
   }
@@ -80,7 +86,6 @@ a {
 .aboutPage {
   @include flexBox;
   gap: 10px;
-
   p {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;

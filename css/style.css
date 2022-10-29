@@ -13,6 +13,15 @@ body {
   align-items: center;
   justify-content: center;
 }
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+  background: black;
+}
+body::-webkit-scrollbar-thumb {
+  background: black;
+}
 
 h1 {
   color: white;
