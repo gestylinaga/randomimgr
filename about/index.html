@@ -8,6 +8,11 @@
     <title>Random Imgr - about</title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
     <!-- Custom Css -->
     <link href="../css/style.css" rel="stylesheet">
 
@@ -21,44 +26,57 @@
 
   <body>
 
-    <div class="aboutPage">
-      <h1 class="title">Random Imgr</h1>
-      <p>
-      is a simple front-end random image viewer, using <a href="https://unsplash.com">unsplash.com</a>'s HTML tag</br>
-      </br>
-      It's like a lorem ipsum random text generator, but for images...</br>
-      </br>
-      By including the link: <i>"source.unsplash.com/random/"</i></br>
-      followed by dimensions: <i>"300x300"</i></br>
-      we generate a random image sized 300x300</br>
-      on <b>every</b> page load:</br>
-      </p>
+    <section>
+      
+      <div class="container aboutPage">
+        <h1 class="title">Random Imgr</h1>
+        <p>
+        is a <span class="text-warning">simple</span> front-end random image <span class="text-success">viewer</span>, using <a href="https://unsplash.com">unsplash.com</a>'s 
+        <span class="text-primary">HTML</span> tag</br>
+        </br>
+        It's like a <i>lorem ipsum</i> <b>random</b> text generator, but for <small class="text-info fw-bold h1">images...</small></br>
+        </br>
+        <span class="text-warning">By including the link:</span>
+        <small class="text-muted"><i>"https://source.unsplash.com/random/"</i></small></br>
+        followed by any dimensions, ie: <small class="text-muted"><i>"300x300"</i></small></br>
+        we generate a random image sized 300x300</br>
+        on <b>every</b> page load:</br>
+        </p>
 
-      <img src="https://source.unsplash.com/random/300x300" alt="Random Image">
-      <a class="buttonBox" href="./">New Image?</a>
-
-      <xmp class="xmpText">What the code looks like:
-
+        <!-- Small Demo: -->
         <img src="https://source.unsplash.com/random/300x300" alt="Random Image">
         <a class="buttonBox" href="./">New Image?</a>
-      </xmp>
 
-      <p>
-      Note: Right Click + "Save image as..." browser behavior</br>
-      - Firefox: saves current image on screen</br>
-      - Google Chrome: generates new random image</br>
-      </p>
+        <xmp class="xmpText">What the code looks like:
 
-      <p>
-      Written in</br>
-      HTML & Sass 
-      </p>
+          <img src="https://source.unsplash.com/random/300x300" alt="Random Image">
+          <a class="buttonBox" href="./">New Image?</a>
+        </xmp>
 
-      <p>
-        <a href="https://github.com/gestylinaga/randomimgr">See the Source Code on GitHub</a>
-      </p>
+        <p>
+        <small class="text-warning">Note:</small> Right Click + <small class="text-muted">"Save image as..."</small> browser behavior:</br>
+        <i class="bi bi-browser-firefox"><i> - Firefox: saves current image on screen</br>
+            <i class="bi bi-browser-chrome"> - Google Chrome: generates/saves a <b>new</b> random image</br>
+        </p>
 
-    </div>
+        <p>
+        <small class="text-success">Written in:</br></small>
+        <i class="bi bi-filetype-html"></i>
+        &
+        <i class="bi bi-filetype-scss"></i>
+        with
+        <br>
+        a <i class="bi bi-bootstrap"></i>
+        <small class="text-primary">Bootstrap<br></small>
+        Framework
+        </p>
+
+        <p>
+          <a href="https://github.com/gestylinaga/randomimgr">See the Source Code on GitHub</a>
+        </p>
+
+      </div>
+    </section>
 
 
     <!-- Nav Box -->
@@ -78,6 +96,8 @@
       <p>Images Sourced from: <a href="https://www.unsplash.com">unsplash.com</a></p>
     </div>
 
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
   </body>
 </html>
