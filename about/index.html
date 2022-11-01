@@ -29,35 +29,47 @@
     <section>
 
       <div class="container aboutPage">
-        <h1 class="title">Random Imgr</h1>
-        <p>
-        is a <span class="text-warning">simple</span> front-end random image <span class="text-success">viewer</span>, using <a href="https://unsplash.com">unsplash.com</a>'s 
-        <span class="text-primary">HTML</span> tag</br>
-        </br>
-        It's like a <i>lorem ipsum</i> <b>random</b> text generator, but for <small class="text-info fw-bold h1">images...</small></br>
-        </br>
-        <span class="text-warning">By including the link:</span></br>
-        <small class="text-muted"><i>"https://source.unsplash.com/random/"</i></small></br>
-        followed by any dimensions, ie: <small class="text-muted"><i>"300x300"</i></small></br>
-        we generate a random image sized <b>300x300</b></br>
-        on <b>every</b> page load:</br>
-        </p>
+
+        <!-- Header -->
+        <div class="my-3">
+          <a href="../"><h1 class="title">Random Imgr</h1></a>
+        </div>
+
+
+        <div class="info">
+          <p>
+          is a <span class="text-warning">simple</span> front-end <span class="text-danger">random</span> image <span class="text-success">viewer</span>, using <a href="https://unsplash.com">unsplash.com</a>'s 
+          <span class="text-primary">HTML</span> &lt;<span class="text-info">image</span>> source tag.</br>
+          </br>
+          It's like a <i class="text-warning">lorem ipsum</i> <b class="text-danger">random</b> text generator, but for <small class="text-info fw-bold h1">images</small>.</br>
+          </br>
+          <span class="text-warning">By including the link:</span></br>
+          <small class="text-muted"><i>"https://source.unsplash.com/random/"</i></small></br>
+          followed by <i class="text-success">any</i> dimensions, ie: <small class="text-muted"><i>"300x300"</i></small></br>
+          we generate a <b class="text-danger">random</b> <span class="text-info">image</span> sized <b class="text-danger">300x300</b></br>
+          on <b class="text-success">every</b> page load:</br>
+          </p>
+        </div>
 
         <!-- Small Demo: -->
         <img src="https://source.unsplash.com/random/300x300" alt="Random Image">
         <a class="buttonBox" href="./">New Image?</a>
 
-        <xmp class="xmpText">What the code looks like:
+        <code>
+          </br>What the Code Looks Like:</br></br>
+          &lt;img src="https://source.unsplash.com/random/300x300" alt="Random Image"></br>
+          &lt;a class="buttonBox" href="./">New Image?&lt;/a>
+        </code>
 
-          <img src="https://source.unsplash.com/random/300x300" alt="Random Image">
-          <a class="buttonBox" href="./">New Image?</a>
-        </xmp>
-
-        <p>
-        <small class="text-warning">Note:</small> Right Click + <small class="text-muted">"Save image as..."</small> browser behavior:</br>
-        Mozilla Firefox <i class="bi bi-browser-firefox"></i><span class="text-muted"> : saves current image on screen</span></br>
-        Google Chrome <i class="bi bi-browser-chrome"></i><span class="text-muted"> : generates/saves a <b>new</b> random image</span></br>
-        </p>
+        <div class="info">
+          <p>
+          <small class="text-warning">Note:</small> Right Click + <small class="text-success">"Save image as..."</small> browser behavior:</br></br>
+          <i class="bi bi-browser-firefox"></i> Mozilla Firefox<span class="text-muted"> : saves current image on screen</span></br>
+          <i class="bi bi-browser-safari"></i> Apple Safari<span class="text-muted"> : saves current image on screen</span></br>
+          <i class="bi bi-browser-chrome"></i> Google Chrome<span class="text-muted"> : generates/saves a <b>new/different</b> random image<small><i></br>
+            aka "I'm Feeling Lucky"</i></small></span></br>
+          </p>
+        </div>
 
         <p>
         <small class="text-success">Written in:</br></small>
@@ -66,22 +78,24 @@
         <i class="bi bi-filetype-scss"></i><br>
         with a
         <a href="https://getbootstrap.com/">
-          <small class="text-primary">
+          <span class="text-primary">
             Bootstrap 
             <i class="bi bi-bootstrap-fill"></i>
             <br>
-          </small>
+          </span>
         </a>
-        Framework
+        framework
         </p>
 
-        <p>
-          <a href="https://github.com/gestylinaga/randomimgr">
-            <i class="bi bi-arrow-return-right"></i>
-            See the Source Code on GitHub
-            <i class="bi bi-github"></i>
-          </a>
-        </p>
+        <div class="info">
+          <p>
+            <a href="https://github.com/gestylinaga/randomimgr">
+              <i class="bi bi-arrow-return-right"></i>
+              See the Source Code on GitHub
+              <i class="bi bi-github"></i>
+            </a>
+          </p>
+        </div>
 
       </div>
     </section>
